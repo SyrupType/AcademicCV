@@ -1,0 +1,375 @@
+% arara: xelatex
+% arara: biber
+% arara: xelatex
+% arara: xelatex
+% arara: xelatex
+
+\documentclass[firstName=Ophélie, lastName=Fraisier]{academicCV}
+
+\addbibresource[label=publications]{biblio_perso.bib}
+
+\DeclareSourcemap{
+    \maps[datatype=bibtex]{
+      % place notedossier dans le champ usera et acceptance dans userb
+      \map{\step[fieldsource=notedossier] \step[fieldset=usera,origfieldval]}
+      \map{\step[fieldsource=acceptance]  \step[fieldset=userb,origfieldval]}
+      % 2016-08-08 numérotation antichronologique via userc
+      \map{\step[fieldsource=keywords, match=\regexp{^CI$}, final]  \step[fieldset=userc, fieldvalue=2]}
+      \map{\step[fieldsource=keywords, match=\regexp{^PI$}, final]  \step[fieldset=userc, fieldvalue=2]}
+      \map{\step[fieldsource=keywords, match=\regexp{^BI$}, final]  \step[fieldset=userc, fieldvalue=1]}
+      \map{\step[fieldsource=keywords, match=\regexp{^WI$}, final]  \step[fieldset=userc, fieldvalue=1]}
+      \map{\step[fieldsource=keywords, match=\regexp{^JN$}, final]  \step[fieldset=userc, fieldvalue=1]}
+      \map{\step[fieldsource=keywords, match=\regexp{^CN$}, final]  \step[fieldset=userc, fieldvalue=1]}
+      \map{\step[fieldsource=keywords, match=\regexp{^PN$}, final]  \step[fieldset=userc, fieldvalue=1]}
+      \map{\step[fieldsource=keywords, match=\regexp{^D$}, final]   \step[fieldset=userc, fieldvalue=4]}
+  }
+}
+
+\begin{document}
+
+\header{CEA Tech Occitanie}{}% Établissement
+			{Institut de Recherche en Informatique de Toulouse}{https://www.irit.fr/}% Laboratoire
+			{~\\
+			\inlineList{Née le 6 juin 1992,
+				Nationalité française}}% Adresse ou infos supplémentaines
+			{https://www.irit.fr/~Ophelie.Fraisier}% Page
+			{ophelie.fraisier@cea.fr}% Email
+			{SyrupType}% Twitter handle
+			{+33 6 18 27 77 45}% Téléphone
+
+
+%--------------------------------------------------------------------------------------------------
+\section{Thèmes de recherche}
+
+\inlineList{Fouille de points de vue,
+				Discours politiques sur les médias sociaux,
+				Humanités numériques}
+
+%--------------------------------------------------------------------------------------------------
+\section{Fonctions exercées}
+
+\entry{2016--2018}{Doctorante en informatique, CEA Tech Occitanie~/~IRIT, Université Toulouse~3}
+
+\entry{2016--2018}{Enseignante vacataire, Université de Toulouse}
+\details{
+	\href{http://iut-informatique.ups-tlse.fr}{Département informatique de l'IUT <<~A~>>}, Université Toulouse~3~(114h)\\
+	\href{http://urfist.univ-toulouse.fr}{Unité régionale de formation à l'information scientifique et technique} (URFIST), Université fédérale de Toulouse~(36h)\\
+	\href{http://mediadoc.univ-toulouse.fr}{Centre régional de formation aux carrières des bibliothèques} (Média d'Oc), Université fédérale de Toulouse~(4h)\\
+	\href{http://departement-informatique.univ-tlse3.fr/licence/licence-informatique/}{Licence informatique 2\up{e} année}, Université Toulouse~3~(12h)
+}
+
+
+%--------------------------------------------------------------------------------------------------
+\section{Diplômes universitaires}
+
+\entry{2018}{\textbf{Doctorat} en informatique, IRIT, Université Toulouse~3\\
+\emph{Détection de points de vue sur les médias sociaux} \pdf{À venir}}
+\details{
+	Directeurs~: Prof. Mohand \textsc{Boughanem} et Romaric \textsc{Besançon} -- Encadrants~: Guillaume \textsc{Cabanac} et Yoann \textsc{Pitarch}%\\
+%	Rapporteurs~: Prof. X \textsc{X} et Prof. X \textsc{X}\\
+%	Examinatrice~: Prof. X \textsc{X} (présidente du jury)
+}
+
+\entry{2015}{\textbf{\href{http://departement-math.univ-tlse3.fr/master-statistique-et-informatique-decisionnelle-sid-big-data-716317.kjsp}{Master Statistiques et Informatique Décisionnelle}}, Université Toulouse~3}
+
+\entry{2013}{\textbf{\href{http://departement-math.univ-tlse3.fr/l3-statistique-et-informatique-decisionnelle-665408.kjsp}{Licence Statistiques et Informatique Décisionnelle}}, Université Toulouse~3}
+
+\entry{2012}{\textbf{DUT informatique} (spécialité informatique de gestion), Université Toulouse~3}
+
+
+%--------------------------------------------------------------------------------------------------
+\section{Prix et distinctions}
+
+\entry{2016}{Article sélectionné pour un numéro spécial de la revue \href{http://isi.revuesonline.com}{Ingénierie des Systèmes d'Information} \cite{FraisierEtAl2016,FavreEtAl2017}}
+\details{4 articles du Forum Jeunes Chercheurs sélectionnés au total.}
+
+
+\vspace{-3mm}
+%--------------------------------------------------------------------------------------------------
+\section{Mandats}
+
+\entry{2016--2018}{
+	Ambassadrice doctorante pour la conférence internationale \href{https://toulouse2018.esof.eu/en/}{EuroScience Open Forum 2018} (ESOF),\\
+	impliquée dans le comité local d'organisation et l'organisation du festival de vulgarisation scientifique \href{https://toulousescience2018.eu/en/science-in-the-city-festival/}{Science in the City}.}
+\details{
+	Sélectionnée sur dossier et entretien.\\
+	\href{https://www.youtube.com/watch?v=c8Gqgvtruko}{Présentation d'ESOF~2018} et participation à la \href{https://www.youtube.com/watch?v=IcTTSrHJi8s}{cérémonie de clôture} lors d'\href{https://manchester2016.esof.eu/en/home.html}{ESOF~2016} à Manchester\\
+	Point de contact entre l'organisation d'EOSF et les doctorant\md{}e\md{}s de l'IRIT\\
+	Participation à la sélection des projets retenus pour le festival Science in the City
+}
+
+\entry{Oct.~2016--\\Déc.~2017}{Élue doctorante au Conseil de laboratoire de l'IRIT, en charge de la Commission des doctorant\md{}e\md{}s}
+\details{
+	Point de contact entre le Conseil de laboratoire et les doctorant\md{}e\md{}s de l'IRIT\\
+	Responsable de l'organisation des réunions mensuelles de la commission des doctorant\md{}e\md{}s, en charge de l'animation du collège doctoral
+}
+
+\entry{2010--2011}{Élue étudiante au Conseil du \href{http://iut-informatique.ups-tlse.fr}{département informatique de l'IUT <<~A~>>}, Université Toulouse~3}
+
+
+%--------------------------------------------------------------------------------------------------
+\section{Activités scientifiques}
+	Ma recherche porte sur la détection et l'analyse de points de vue sur les médias sociaux en tirant partie de l'homophilie, en particulier les points de vue politiques \cite{FavreEtAl2017,FraisierEtAl2018b,FraisierEtAl2017a,FraisierEtAl2017b,FraisierEtAl2016}.
+%
+	Au vu des nombreux travaux de sociologie portant sur cette thématique, il est important pour moi de ne pas rester exclusivement au sein de la communauté informatique mais au contraire d'échanger avec les chercheurs en sciences humaines \cite{FraisierEtAl2018c,FraisierEtAl2017c}.
+
+\vspace{2mm}
+	Ces échanges ont notamment permis un travail interdisciplinaire d'analyse de la campagne présidentielle française de 2017 au sein du projet \href{https://listic.irit.fr}{LisTIC} \cite{MarchandEtAl2018,BenbouzidEtAl2017}, et m'ont permis de constituer un nouveau jeu de données de points de vue politiques mis à disposition de la communauté scientifique \cite{FraisierEtAl2018a}.
+
+\vspace{2mm}
+	Le contact avec le public est aussi des éléments important à mes yeux, que je tente d'intégrer à mon travail à travers mes formations, ma participation à des conférences généralistes ou des billets de vulgarisation scientifique \cite{Fraisier2017, FraisierEtAl2018d}.
+
+
+
+
+\subsection{Contribution au processus d'évaluation par les pairs}
+
+
+\subsubsection{Évaluation d'articles soumis à des revues d'audience internationale et nationale}
+
+\entry{2017}{\href{http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)2330-1643}{\emph{Journal of the Association for Information Science and Technology}}, en tant que relectrice additionnelle avec \href{https://www.irit.fr/~Guillaume.Cabanac/}{Guillaume~Cabanac} (1)}
+
+\entry{2017}{\href{https://benthamscience.com/journals/recent-patents-on-computer-science/}{Recent Patents on Computer Science}, en tant que relectrice additionnelle avec \href{https://www.irit.fr/~Guillaume.Cabanac/}{Guillaume~Cabanac} (1)}
+
+
+\subsubsection{Évaluation d'articles soumis à des conférences}
+
+\entry{2018}{Membre du comité de lecture des Rencontres Jeunes Chercheur\md{}se\md{}s de \href{http://coria-taln-2018.irisa.fr/}{CORIA~/~TALN 2018} (2)}
+
+%\entry{2017}{\href{http://sigir.org/sigir2017/}{SIGIR}, Short Papers Track, en tant que relectrice additionnelle avec \href{https://www.irit.fr/~Thibaut.Thonet/}{Thibaut~Thonet} (2)}
+
+
+%------------------------------------------------------------------------------------------------
+\subsection{Programmes de recherche}
+
+\subsubsection{Participation à des programmes interdisciplinaires}
+
+\entry{2016--2020}{\href{https://listic.irit.fr}{LisTIC}, programme ANR JCJC du défi <<~sociétés innovantes, intégrantes et adaptatives~>> impliquant cinq laboratoires, coordonné par J. \textsc{Figeac} (LISST, Toulouse~2)\\
+Liens socionumériques et Technologies (mobiles) de l'Information et de la Communication \cite{MarchandEtAl2018,BenbouzidEtAl2017,FraisierEtAl2017c}}
+\details{
+	Pivot entre l'approche informatique de la fouille d'opinions et l'approche sociologique\\
+	Support pour l'extraction d'informations depuis la base de données\\
+	Réalisation de visualisations avec \LaTeX{} et Ti\textit{k}Z\\
+}
+
+
+\subsubsection{Participation à des programmes en informatique}
+
+\entry{2016--2019}{\href{http://www.cea-tech.fr/cea-tech/Pages/secteurs-applicatifs/securite-defense/x2x-cyber-securite.aspx}{CYBER}, contrat de recherche laboratoire -- entreprises (CLE) impliquant quatre laboratoires universitaires et une entreprise en Occitanie, coordonné par H. \textsc{Dubois} (CEA Tech Occitanie)~: Cyber-sécurité et sécurité des systèmes d'informations~: analyse d'opinions sur les réseaux sociaux
+\cite{FraisierEtAl2018b,FraisierEtAl2017a,FraisierEtAl2017b}}
+
+
+
+%-------------------------------------------------------------------------------------------------
+\subsection{Invitations}
+
+\subsubsection{À l'international}
+
+\entry{2018}{Présentation \href{}{\emph{Political Stances on Twitter}} pour le \href{https://sites.google.com/view/revopid-2018}{RevOpiD-2018 Workshop on Opinion Mining, Summarization and Diversification} organisé durant la conférence \href{}{ACM Hypertext 2018} \cite{Fraisier2018}}
+%\details{Cet atelier vise à découvrir des perspectives diverses pour définir des opinions. Comment les opinions peuvent-elles être mieux résumées sur les forums en ligne, dans les résultats de recherche sur le Web ou ailleurs? Quelles relations peuvent être cartographiées entre l'échange d'opinions sur le web?}
+
+
+\subsubsection{En France}
+
+\entry{2018}{Présentation \href{https://www.irit.fr/publis/IRIS/2018_SRM_FCPBB.pdf}{\emph{Découverte de points de vue sur les médias sociaux}} pour le séminaire <<~Savoirs, réseaux,\\médiations~>> du \href{http://lisst.univ-tlse2.fr}{Laboratoire Interdisciplinaire Solidarités, Sociétés, Territoires} (LISST) \cite{FraisierEtAl2018c}}
+\details{Le séminaire SRM du LISST combine les études sur les sciences et les analyses de réseaux sociaux autour d'une réflexion plus générale sur les formes sociales.}% Le séminaire est principalement dédié à la discussion de recherches empiriques en cours ou récentes, mais il organise également des échanges sur les théories des sciences sociales prenant en compte les relations interpersonnelles et les formes collectives.}
+
+
+%--------------------------------------------------------------------------------------------------
+\section{Activités liées à l'enseignement}
+
+\subsection{Responsabilités de cours}
+	J'ai mis en place les enseignements suivants et conçu l'ensemble des supports utilisés.
+	\vspace{2mm}
+
+\entry{LP GTIDM\\2016--2018}{
+	\href{https://www.irit.fr/~Ophelie.Fraisier/enseignement/traitement-info/}{Traitement de l'information}~: 30h\,/\,an
+}
+\details{
+	Promotions de 25 élèves de la Licence Professionnelle <<~\href{http://iut.ups-tlse.fr/licence-professionnelle-gestion-et-traitement-informatique-de-donnees-massives-372722.kjsp?RH=1213189547834}{Gestion et Traitement Informatique de Données Massives}~>>\\
+	\inlineList{Initiation au langage de programmation Python,
+		Apprentissage des expressions régulières,
+		Utilisation de bibliothèques de scrapping et d'API pour la collecte de données,
+		Présentation de concepts statistiques fondamentaux et de visualisations pour l'analyse et l'interprétation des données collectées}\\
+	Évaluation sur un projet de groupe mettant en application toutes les notions vues lors de l'enseignement~: analyse d'un corpus de tweets collectés à l'aide de l'API Twitter à partir d'un mot-clé (livrables~: rapport et présentation orale)
+}
+
+\entry{Média d'Oc\\2016}{
+	\href{https://www.irit.fr/~Ophelie.Fraisier/enseignement/panorama/}{Panorama de l'informatique}~: 4h
+}
+\details{
+	Groupe d'une 12aine de documentalistes non scientifiques de formation en charge de fonds scientifiques.\\
+	Module court de \href{http://mediadoc.univ-toulouse.fr}{Média d'Oc} dans le but d'expliquer ce que recouvre l'informatique (définition, histoire, domaines, recherche et impact dans la région) afin de faciliter leurs tâches courantes (acquisitions, indexation, renseignements au public)
+}
+
+
+\subsection{Autres enseignements dispensés}
+%	J'ai également dispensé les enseignements suivants~:
+%	\vspace{2mm}
+
+\entry{URFIST\\2016--2018}{Composition d'articles scientifiques et de mémoires avec \LaTeX{} et Bib\TeX~: 12h~/~an}
+\details{
+	Groupes d'environ 20 personnes composés doctorant\md{}e\md{}s, de personnels de l'Université de Toulouse et de personnels extérieurs\\
+	Introduction aux concepts nécessaires à la création de divers documents (lettres, CV, dossiers de candidature, mémoires, etc.) avec focus sur la composition de documents académiques : articles avec bibliographies, mémoires avec tables des matières et index, planches pour les présentations orales
+}
+
+\entry{LP GTIDM\\2016--2018}{Suivi de stage~/~d'alternance~: 8h~/~an}
+\details{
+	Point de contact pendant le stage ou l'alternance pour l'élève et son tuteur~/~sa tutrice\\
+	Participation au jury de d'évaluation des stages
+}
+
+\entry{IRIT\\2017}{\href{https://www.irit.fr/Accueil,1697}{Stage Hippocampe}~: 2 jours}
+\details{
+	Stage de découverte de la recherche en informatique pour les Terminales S Sciences de l'ingénieur du lycée François Mitterand de Moissac, accueillis à l'IRIT\\
+	Encadrement d'un groupe de quatre lycéens sur le thème de l'analyse d'opinion sur Twitter 
+}
+
+\entry{L2 INFO\\2016}{Bases de Données (TP Machine)~: 10h}
+\details{SGBD, démarche de conception, modèle entité-association, modèle relationnel, SQL, LLD, LMD, LID}
+
+
+%--------------------------------------------------------------------------------------------------
+\section{Vie universitaire}
+
+\subsection{Animation scientifique}
+
+\subsubsection{Manifestations d'audience internationale}
+
+\years{2018}{Participation au comité local d'organisation de l'\href{https://toulouse2018.esof.eu/en/}{EuroScience Open Forum} (ESOF) et à l'organisation du festival de vulgarisation scientifique \href{https://toulousescience2018.eu/en/science-in-the-city-festival/}{Science in the City}}
+\vspace{1mm}
+\details{
+	ESOF est la plus grande conférence scientifique interdisciplinaire en Europe.
+	Ce forum européen biennal rassemble plus de \n{4000} participant\md{}e\md{}s (scientifiques, politiques, journalistes, grand public), dont plus de 40\,\% d'étudiants et de jeunes chercheurs.
+	Le festival Science in the City est l'événement grand public d'ESOF, comptant plus d'une centaine d'évènements dans la ville~: expositions, débats, spectacles, visites guidées, jeux, \ldots
+}
+
+
+\subsubsection{Manifestions d'audience nationale}
+
+\entry{2016}{Participation au comité local d'organisation de la \href{https://www.irit.fr/sdnri2016/}{Semaine du Document Numérique et de la Recherche d'Information 2016}}
+\details{Évènement rassemblant la Conférence en Recherche d’Information et Applications (CORIA) et le Colloque International\\Francophone sur l’Écrit et le Document (CIFED)}
+
+
+\newpage
+%---------------------------------------------------------------------------------------------------
+\section{Conception et développement d'outils de recherche et de valorisation}
+
+%\entry{2018}{Prototype du modèle de détection temporelle points de vue multiples}
+
+\entry{2018}{
+	Réalisation de visualisations vectorielles en \LaTeX{} et Ti\textit{k}Z \cite{FraisierEtAl2018a, FraisierEtAl2018d}\\
+	Implémentation de l'\href{https://github.com/SyrupType/bhowmick_agreement_measure}{accord inter-annotateurs\md{}trices de Bhowmick} en Python \cite{FraisierEtAl2018a}
+}
+
+\entry{2017}{
+	Prototype du modèle de détection de points de vue SCSD \cite{FraisierEtAl2018b}\\
+	Prototype d'un moteur de recherche pour enfants basé sur sélection d'images
+}
+\details{Prototype créé pour le \href{https://asso-aria.org/index.php?option=com_content&view=article&id=142&Itemid=540}{hackaton} (environ 7h) organisé lors de de l'\href{https://asso-aria.org/index.php?option=com_content&view=article&id=134&Itemid=531}{École d'Automne en Recherche d'Information et\\Applications} (EARIA 2016)}
+
+\entry{2016}{Programme d'évaluation d'algorithmes de détection de points de vue pour la détection de communautés homogènes de points de vue \cite{FraisierEtAl2017a}}
+
+\entry{2013}{\href{http://www.irit.fr/~Guillaume.Cabanac/inforsid}{L'anthologie INFORSID}~: Annales des conférences INFORSID sur les systèmes d'information}
+\details{Refonte du site web et créations des visualisations}
+
+
+\vspace{-3mm}
+%--------------------------------------------------------------------------------------------------
+\section{Langues}
+				
+\langs{	Français : langue maternelle,%
+			Anglais : pratique quotidienne,%
+			Espagnol : notions}
+
+
+%--------------------------------------------------------------------------------------------------
+\section{Formation continue}
+	En lien avec mes activités de recherche, d'enseignements ou de représentation, j'ai suivi les formations suivantes en tant qu'apprenante~:
+	\vspace{2mm}
+
+\entry{2017}{
+	<<~Pratiques théâtrales pour la didactique en préparation d'ESOF Manchester~>>, Université de Toulouse, Toulouse, 07/07 \& 22/07\\
+	<<~Les outils et réseaux professionnels pour réussir mon entreprise~>>, URFIST, Toulouse, 01/02
+}
+
+\entry{2016}{
+	<<~Découvrir ce qu’est apprendre pour enseigner plus efficacement~>>, URFIST, Toulouse, 07/10\\
+	<<~Introduction à la lexicométrie avec le logiciel libre IRaMuTeQ~>>, Labex Structuration des Mondes Sociaux, Toulouse, 24/05\\
+	<<~Ethique et intégrité scientifique~>>, URFIST, Toulouse, 23/05\\
+	<<~Wikipédia : fonctionnement, enjeux et modalités de participation~>>, URFIST, Toulouse, 17/05\\
+	<<~Ecrire pour le web~>>, URFIST, Toulouse, 04/05\\
+	<<~Rendre compréhensible des données complexes grâce à de l'infographie~>>, URFIST, Toulouse, 16/03
+}
+
+
+%--------------------------------------------------------------------------------------------------
+\newpage
+\hypertarget{publications}{}
+\section{Publications \hspace{.5cm}{\normalsize\href{https://scholar.google.fr/citations?hl=en&user=q-Kr2hYAAAAJ}{[Google Scholar Citations]}}}\label{sec:publications}
+
+\subsection{Principales collaborations scientifiques}
+
+\subsubsection{Avec les participant\md{}e\md{}s du projet LisTIC}
+\entry{Depuis 2017}{
+	\href{http://lisst.univ-tlse2.fr/accueil/equipes-de-recherche/centre-d-etude-des-rationalites-et-des-savoirs-cers-/annuaire/figeac-julien-476080.kjsp?RH=1465205686288}{Julien~\textsc{Figeac}}, chargé de recherche au CNRS en Sociologie et en Sciences de la communication, LISST, Université Toulouse 2\\
+	\href{https://www.irit.fr/spip.php?page=annuaire&lang=fr&code=12694}{Tristan~\textsc{Salord}}, ingénieur de recherche, IRIT, Université Toulouse 3\\
+	\href{https://www.lerass.com/author/pratinaud/}{Pierre~\textsc{Ratinaud}}, MCF en Sciences de l’Education, LERASS, Université Toulouse 3\\
+	\href{http://nikos.smyrnaios.free.fr}{Nikos~\textsc{Smyrnaios}}, MCF en Sciences de l’Information et de la Communication, LERASS, Université\\Toulouse 3
+}
+
+\subsubsection{Avec mes encadrants de thèse}
+\entry{Depuis 2016}{
+	\href{http://irit.fr/~Guillaume.Cabanac/}{Guillaume~\textsc{Cabanac}}, MCF en Informatique, IRIT, Université Toulouse 3\\
+	\href{https://www.irit.fr/~Yoann.Pitarch/}{Yoann~\textsc{Pitarch}}, MCF en Informatique, IRIT, Université Toulouse 3\\
+	\href{https://scholar.google.com/citations?user=9CiniHsAAAAJ&hl=en}{Romaric~\textsc{Besançon}}, ingénieur chercheur, CEA LIST / Nano-Innov, CEA\\
+	\href{http://irit.fr/~Mohand.Boughanem/}{Mohand~\textsc{Boughanem}}, Professeur en Informatique, IRIT, Université Toulouse 3
+}
+
+
+\subsection{Publications d'audience internationale}
+
+%\publis{JI}{Revues avec sélection par comité de rédaction}{R}{
+%	FigeacEtAl2018
+%}
+
+\publis{CI}{Articles longs présentés en conférences avec sélection par comité de programme}{C}{FraisierEtAl2018a,FraisierEtAl2018b}
+
+\publis{PI}{Articles courts et posters présentés en conférences avec sélection par comité de programme}{P}{FraisierEtAl2018d,FraisierEtAl2017a}
+
+\publis{WI}{Ateliers avec sélection par comité de programme}{W}{Fraisier2018}
+
+%\publis{UI}{Articles non publiés}{N}{}
+
+%\publis{DI}{Divers}{D}{}
+
+\publis{BI}{Billet de blog}{B}{Fraisier2017}%% ESOF Blog + DDJ
+%	Fraisier2018
+%}
+
+
+\vspace{1cm}
+\subsection{Publications d'audience nationale}
+
+\publis{JN}{Revue avec sélection par comité de rédaction}{r}{FavreEtAl2017}
+
+\publis{CN}{Article long présenté en conférences avec sélection par comité de programme}{c}{FraisierEtAl2017b}
+
+\publis{PN}{Article Jeunes Chercheurs\md{}ses et poster présenté en conférence avec sélection par comité de programme}{p}{FraisierEtAl2016}
+
+%\publis{WN}{Atelier avec sélection par comité scientifique}{a}{}
+
+%\publis{B}{Billets de blog et articles de presse}{b}{}
+
+\publis{D}{Communications}{d}{FraisierEtAl2018c,MarchandEtAl2018,BenbouzidEtAl2017,FraisierEtAl2017c}
+
+%\subsection{Mentions dans la presse}
+
+%\publis{AI}{Presse internationale}{P}{}
+
+%\publis{A}{Presse nationale}{p}{}
+
+
+\footer{https://www.irit.fr/~Ophelie.Fraisier/cv.pdf}
+
+\end{document}
